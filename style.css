@@ -2,14 +2,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
 }
 
 :root {
     --main-background: #3f3f46;
     --text-color: #fafafa;
+    --nav-background: #0ea5e9;
+    --text-color-hover: #9333ea;
 }
 
 body {
     background: var(--main-background);
     color: var(--text-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+nav {
+    background: var(--nav-background);
+    width: fit-content;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+nav a:hover {
+    color: var(--text-color-hover);
+    transition: 0.5s;
 }
